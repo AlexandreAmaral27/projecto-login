@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/*Typical device Breakpoints
+-----------------------------
+pequenas telas: ate 600px
+celular: de 600px ate 768px 
+tablet: 768px ate 992px 
+desktop: 992px ate 1200px
+grandes telas: acima 1200px 
+*/
+@media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background-image: linear-gradient(to top,#49a09d,#5f2c82);
+    }
+    #login{
+        width: 80vw;
+        height: 300px;
+    }
+    #login>#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-position:  right;
+       
+    }
+   #login>#formulario{
+    float: right;
+    width: 70%;
+   }
+   .campo>input{
+    background-color: #60bebb;
+    padding: 4px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 0px;
+    width: calc(99.9% - 44px);
+    height: 100%;
+    transform: translateY(-11px);
+   
+}
+}
+@media screen and (min-width:992px) {
+    body{
+        background-image: linear-gradient(to top,#49a09d,#5f2c82);
+    }
+
+    #login{
+        width: 950px;
+        height: 355px;
+    }
+    #login>#imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+        background-position: left bottom;
+    }
+    #login>#formulario{
+        float: left;
+        width: 50%;
+    }
+    #formulario>h1{
+       
+        font-size:2em ;
+    }
+    #formulario>p{
+        font-size: 1em;
+        margin: 20px 0px;
+    }
+    .campo>input{
+        background-color: #60bebb;
+        padding: 4px;
+        font-size: 1em;
+        border-radius: 8px;
+        border: 0px;
+        width: calc(99.9% - 44px);
+        height: 100%;
+        transform: translateY(-11px);
+    }
+}
